@@ -58,7 +58,7 @@ namespace MergeSort
                 int rightIndex = 0;
                 List<int> sortedList = new List<int>();
 
-                while (leftIndex < left.Count() && rightIndex < right.Count())
+                while (leftIndex < left.Count() || rightIndex < right.Count())
                 {
                     if (leftIndex >= left.Count())
                     {
